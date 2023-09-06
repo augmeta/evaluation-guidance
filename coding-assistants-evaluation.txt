@@ -1,0 +1,117 @@
+Coding Assistants: Evaluation Criteria
+
+Good teams are able to consistently defend their sacred engineering flow by limiting meetings, reducing interrupts, removing constraints, reducing tech debts, and so on.
+
+The idea of coding assistants is not new and they also help teams stay in the flow.
+
+But when they are powered by LLMs and generative AI, the productivity gains are unprecedented - as most of us must have witnessed by now.
+
+This sector is evolving rapidly. While established platforms like GitHub Copilot enjoy widespread adoption and a clear advantage over newcomers, I believe we have yet to witness the full spectrum of developments in this space.
+
+Most of these AI-powered assistants are compatible with common languages and IDEs, but there's more to consider when assessing them for enterprise adoption. 
+
+Consider the following evaluation criteria when comparing these coding assistants.
+
+--------------------------------------------------
+
+Criteria: Capabilities
+
+Coding assistants have a lot to offer - code completion, refactoring, debugging, documentation, syntax checking, recommending alternatives, bug fixing, explaining code, code search, vulnerability detection, migration assistance, and so on.
+
+Some also have the chat capability that’s like ChatGPT embedded in your IDE acting like the veteran engineer who knows it all when it comes to your code repositories.
+
+However, the breadth of an assistant’s featureset should not be the sole criterion for selection. An assistant with an expansive featureset but inconsistent or erroneous suggestions could misguide teams, particularly those with a significant proportion of junior engineers.
+
+A good idea would be to work backward from specific challenges that are stagnating progress for your team today and will continue to do so for the next 12-18 months. This obviously requires an understanding of the team’s dynamics, debts, and desired outcomes.
+
+For example, if migrating an entire codebase to TypeScript has the highest ROI today, it might be worth investing in a specialized assistant that’s built from the ground up to accelerate such migrations.
+
+Key takeaway: A judicious blend of understanding the featureset, recognizing your unique team needs, and emphasizing quality will lead to informed decisions.
+
+--------------------------------------------------
+
+Criteria: Accuracy
+
+Accuracy (or Quality) of the coding assistants is hard to measure and they are constantly improving too. But in any case, the expectation is to get consistently good suggestions across a varied set of programming tasks. The suggestions are expected to be bug-free. Poor accuracy would require a lot of manual intervention, possibly defeating the purpose of being a productivity booster. For example, here is a bad quicksort algo suggestion that uses lots of memory. 
+
+Look into the underlying model that’s being used. Is the assistant nothing but a wrapper on top of ChatGPT? Is it being fine-tuned? What’s being done under the hood for it to be context-aware?
+
+On a side note, I am excited to witness the accuracy of an assistant that’s using Code Llama.
+
+Key Takeaway: Prioritize precision and do some basic experimentation.
+
+--------------------------------------------------
+
+Criteria: Latency
+
+The ideal assistant should be able to allow engineers to maintain a flow state. Most assistants will prioritize low latency because waiting even a few seconds for suggestions can be counterproductive. While there's an inherent trade-off between latency and quality with larger models often being slower but more accurate, the correlation between speed and quality isn't always direct due to factors like model architecture and optimizations. To evaluate latency fairly, one recommendation would be to perform a standardized task, such as creating a linked list class in Python, using fresh IDE instances, and observing the tool's performance in a real-world coding scenario.
+
+Codeium did a good job here comparing Latency and Accuracy of a few assistants with its own offering.
+
+Key Takeaway: Speed and quality must coexist. Strive for an assistant that harmoniously balances both.
+
+--------------------------------------------------
+
+Criteria: Security
+
+In a Stanford study, researchers discovered that participants using AI assistants were more inclined to introduce security vulnerabilities in their programming tasks. Alarmingly, they were also more likely to perceive their insecure codes as secure in comparison to the control group. The silver lining is that the participants who put in more effort into framing their queries to the AI assistant were likely to produce code with fewer security vulnerabilities.
+
+To produce contextually good suggestions, coding assistants require access to your codebases and without stringent security protocols, there's potential for exposure or mishandling of sensitive and confidential data.
+
+So what needs to be looked into is the configurability of the tool to put guardrails in place as well as the emphasis on security best practices during the training of the tool’s models.
+
+Key Takeaway: Security isn't optional. Opt for an assistant that embeds a security-first ethos in its DNA.
+
+--------------------------------------------------
+
+Criteria: Privacy
+
+It really depends on your company’s privacy expectations and apparatus, but prioritizing the following to ensure data privacy would always be a safer bet in the longer run.
+
+Hosting Flexibility: Does the tool offer diverse deployment options—on-premises, VPC, or secure SaaS?
+Data Exclusivity: Can you ensure that your code remains solely in your chosen environment and won't be shared?
+Training Control: Is the model being trained only on permissive open-source licensed code? If not, then there could be ramifications down the road where your organization’s proprietary repositories will contain code that it shouldn’t.
+Completion Confidentiality: Context-aware suggestions should reflect your organization’s know-how without revealing actual code. Is that the case?
+Data Storage Assurance: Can the assistant avoid storing or sharing your code across any deployment method?
+
+Key Takeaway: Your code's privacy is paramount. Ensure your assistant respects, protects, and champions it.
+
+--------------------------------------------------
+
+Criteria: Roadmap
+
+There’s a significant overlap in the featuresets as well as the roadmaps of these assistants. Most start off focusing on individual developers and work their way through to enterprise offerings with features like offline functionality, team management, etc. and guarantees around compliance, privacy, etc.
+
+Like with all buy decisions when it comes to software, it’s important to get a sneak peak into the roadmaps and if there are good enough reasons, influence it. Personally, I love it when the founders are accessible and offer themselves as the first line of customer support.
+
+Key Takeaway: A tool's future vision is a testament to its adaptability. Engage, understand, and ensure it's in sync with your team's growth trajectory.
+
+--------------------------------------------------
+
+Criteria: Pricing
+
+Let’s ignore individual pricing because we are focused on adoption by teams (aka enterprise plans). These assistants are typically priced per user, per month. When purchasing for a team, expect to get features like:
+-- User, team, license, and policy management
+-- Privacy guarantees
+-- Optionality around hosting
+-- Usage analytics
+-- Priority support
+-- Offline functionality
+-- Centralized configuration
+
+Last we checked, most of these range from $12 to $20 per user, per month.
+
+Key Takeaway: Look beyond the price tag. Dive into the value proposition, ensuring your investment promises tangible and intangible returns.
+
+--------------------------------------------------
+
+Next Steps
+
+The coding assistance domain is in flux, with new models and solutions emerging regularly. Teams need to be adaptable, understanding the nuances of each tool. Key considerations would be:
+
+Does it necessitate downloading an app, a new IDE, or is it an IDE extension?
+Specialization: Is the tool tailored for a specific use case? For instance, is it like Grit designed for migrations or Sapient aimed at generating test code? And what's the user experience for these specialized purposes?
+
+Devtools lean towards building self-serve platforms to streamline user onboarding. While this approach has its merits—enabling teams to harness value swiftly without wading through lengthy sales cycles or product demos—it also encourages lazy solutioning.
+
+The convenience of rapid integration can be double-edged. Once teams invest time and resources into a solution, there’s an inherent bias towards sticking with it, even when other, potentially superior, options are available. With Augmeta, we are encouraging teams to prioritize due diligence by comparing the underlying playbooks that get the job done. Discover a few of those for coding assistance here: augmeta.ai/categories/coding-assistance
