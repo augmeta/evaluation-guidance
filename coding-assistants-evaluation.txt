@@ -105,6 +105,16 @@ Key Takeaway: Look beyond the price tag. Dive into the value proposition, ensuri
 
 --------------------------------------------------
 
+Criteria: Form Factor
+
+Extensions are easy, quick, and they meld seamlessly with your preferred IDEs. The "2 mins" adoption allows you to smoothly integrate them into your workflow, fulfilling essential tasks proficiently and without hassle.
+
+To level up from there, standalone and extensible applications open up an expansive set of benefits to the table; case in point is Pieces for Developers. By virtue of being independent, tools like Pieces have the flexibility to develop increasingly rich features like snippet enrichment, management, and reusability and AI-native development workflows.
+
+Key Takeaway: If you are looking for advanced, AI-native capabilities beyond what's possible via extensions - explore alternative form factors.
+
+--------------------------------------------------
+
 Next Steps
 
 The coding assistance domain is in flux, with new models and solutions emerging regularly. Teams need to be adaptable, understanding the nuances of each tool. Key considerations would be:
